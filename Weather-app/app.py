@@ -17,7 +17,7 @@ def home():
         else:
             city = str(new_city)
 
-    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&APPID=645183e67fb897eb16867da750323622'
+    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&APPID=YourKEy'
     r = requests.get(url.format(city)).json()
 
     temp = r.get('main', {}).get('temp')
