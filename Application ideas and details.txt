@@ -1,0 +1,9 @@
+1. Weather App:
+
+	Project Details:
+		
+		The application uses openweathermap for retrieving data using web api
+		a simple html page that displays the weather for inputted city
+		
+		
+

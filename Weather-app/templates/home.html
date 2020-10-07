@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Document</title>
+</head>
+<body style="background-image: url({{ url_for('static', filename='img/france.jpg') }});">
+
+
+    <div class="search">
+        <form method="POST">
+        <input class="search_field" name="city" type="text" placeholder="Search City"/><br>
+            <button  type="submit"
+                     style="margin-left: 180px;
+                     height: 30px;
+                     width: 80px;
+                     background-color: blue;
+                     color: white;
+                     border-radius: 20px;
+                     opacity: 0.8"
+
+
+            >
+
+                Search</button>
+        </form>
+    </div>
+
+    <div class="weather_details">
+
+        <label for="city" class="cityName">{{weather.city.capitalize()}}</label><br><br><br><br>
+
+        <label for="temperature" class="temperatureDegree">{{weather.temperature}}</label><br>
+
+
+        <label for="description" class="description">{{weather.description}}</label>
+
+
+
+
+        <br><br><br><br>
+
+        <div style="text-align: center;">
+
+
+
+
+
+
+            <label for="" style="padding: 40px; color: rgb(255, 255, 255);">Humidity: {{weather.humidity}}</label>
+            <label for="" style="padding: 40px; color: rgb(255, 255, 255);">Pressure: {{weather.pressure}}</label><br><br><br>
+            <label for="" style="padding: 40px; color: rgb(255, 255, 255);">Wind: {{weather.wind}}</label>
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+</body>
+</html>
